@@ -9,6 +9,18 @@
 int main(void)
 {
     // Your code here
+    int x = 10;
+    int child = fork();
+
+    if (child < 0){
+        printf("Forked %d\n", x);
+        x = 20;
+        printf("Forked reassignment %d\n", x);
+    } else {
+        printf("Parent %d\n", x);
+        x = 30;
+        printf("Parent reassignment %d\n", x);
+    }
 
     return 0;
 }
