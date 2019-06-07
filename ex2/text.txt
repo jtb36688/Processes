@@ -1,0 +1,2 @@
+Reading from parent
+Reading from child
